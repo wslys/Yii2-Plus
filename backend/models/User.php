@@ -99,4 +99,10 @@ class User extends \yii\db\ActiveRecord
         $this->auth_key = Yii::$app->security->generateRandomString();
     }
 
+    public function beforeSave($insert)
+    {
+        $this->updated_at = time();
+
+        return parent::beforeSave($insert);
+    }
 }
