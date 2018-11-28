@@ -103,13 +103,13 @@ class LoginForm extends Model
         $location = json_decode($location);
         curl_close($ch);
         $loc = "";
-        if($location===FALSE) return "";
+        /*if($location===FALSE) return "";
         if($location < 0) return "";
         if (empty($location->desc)) {
             $loc = $location->province.'-'.$location->city.'-'.$location->district.'-'.$location->isp;
         }else{
             $loc = $location->desc;
-        }
+        }*/
         return $loc;
     }
 

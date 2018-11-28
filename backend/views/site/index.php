@@ -129,7 +129,8 @@ $this->title = 'Y+';
                 <a href="<?=Url::toRoute('site/logout')?>" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<?= Url::toRoute('index/welcome')?>" frameborder="0" data-id="index_v1.html" seamless></iframe>
+                <!--<iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<?/*= Url::toRoute('index/welcome')*/?>" frameborder="0" data-id="index_v1.html" seamless></iframe>-->
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<?= Url::toRoute('index/index')?>" frameborder="0" data-id="index_v1.html" seamless></iframe>
             </div>
             <div class="footer">
                 <div class="pull-right">&copy; 2012-2016 <a href="http://1000xun.findz.cn/" target="_blank">Y+</a>
